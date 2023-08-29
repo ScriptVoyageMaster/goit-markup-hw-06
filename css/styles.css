@@ -163,6 +163,35 @@ label {
 .addr-lnk:focus {
   color: var(--ocean);
 }
+
+.nav-button {
+  width: 32px;
+  height: 1px;
+  background-color: #2e2f42;
+  border: 1px solid #2e2f42;
+  border-radius: 10%;
+}
+.nav-button::after {
+  display: block;
+  content: '';
+  width: 32px;
+  height: 1px;
+  background-color: #181e86;
+  border: 1px solid #e60b0b;
+  border-radius: 10%;
+  margin-top: 6px;
+}
+.nav-button::before {
+  display: block;
+  content: '';
+  width: 32px;
+  height: 1px;
+  background-color: #2e2f42;
+  border: 1px solid #0512fa;
+  border-radius: 10%;
+  margin-top: 6px;
+}
+
 /*==========================
 /    HERO
 /===========================
@@ -1041,4 +1070,64 @@ label {
 .contact-submit-btn:hover,
 .contact-submit-btn:focus {
   background-color: var(--ocean);
+}
+
+.js-menu-container {
+  display: none;
+  width: 428px;
+  min-height: 796px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+}
+.is-open {
+  display: block;
+}
+.menu-btn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-color: var(--cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.js-close-menu {
+}
+.menu-btn-icon {
+}
+.menu-nav {
+}
+.menu-nav-list {
+}
+.list {
+}
+.menu-nav-item {
+}
+.menu-nav-lnk {
+}
+.link {
+}
+.active {
+}
+.menu-addr {
+}
+.menu-list {
+}
+.addr-lnk {
 }

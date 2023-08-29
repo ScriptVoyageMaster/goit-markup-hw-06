@@ -19,11 +19,12 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="body">
+  <body class="body" style>
     <header class="hdr">
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo-lnk link">Web<span class="logo-txt">Studio</span> </a>
+          <div class="nav-button js-open-menu" isMenuOpen !aria-expanded></div>
           <ul class="nav-list list">
             <li class="nav-item"><a href="./index.html" class="nav-lnk link active">Studio</a></li>
             <li class="nav-item"><a href="./portfolio.html" class="nav-lnk link">Portfolio</a></li>
@@ -443,6 +444,27 @@
         </form>
       </div>
     </div>
+    <div class="js-menu-container">
+      <button class="modal-btn js-close-menu" type="button">
+        <svg class="modal-btn-icon js-close-menu" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="menu-nav">
+        <ul class="menu-nav-list list">
+          <li class="menu-nav-item"><a href="./index.html" class="menu-nav-lnk link active">Studio</a></li>
+          <li class="menu-nav-item"><a href="./portfolio.html" class="menu-nav-lnk link">Portfolio</a></li>
+          <li class="menu-nav-item"><a href="" class="menu-nav-lnk link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="menu-addr">
+        <ul class="menu-list list">
+          <li><a href="mailto:info@devstudio.com" class="addr-lnk link">info@devstudio.com</a></li>
+          <li><a href="tel:+110001111111" class="addr-lnk link">+11 (000) 111-11-11</a></li>
+        </ul>
+      </address>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
