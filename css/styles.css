@@ -181,27 +181,50 @@ label {
 /===========================
 */
 
-.hero {
+/* .hero {
   max-width: 1440px;
   background: var(--navyblue);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office-mobile.jpg);
+    url(../images/people-office.jpg);
   padding: 188px 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+} */
+
+.hero {
+  max-width: 428px;
+  background: var(--navyblue);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-mobile.jpg);
+  padding: 112px 0;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   /* object-fit: contain; */
 }
-.hero-ttl {
+/* .hero-ttl {
   color: var(--white);
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  line-height: 1.07; /* 107.143% */
+  line-height: 1.07; 
   letter-spacing: 1.12px;
   max-width: 496px;
   margin: 0 auto 48px;
+} */
+.hero-ttl {
+  color: var(--white);
+  text-align: center;
+  font-size: 36px;
+  margin: 0 38px 72px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .hero-btn {
   background: var(--iris);
@@ -852,7 +875,7 @@ label {
   /* backdrop-filter: blur(2px); */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal {
+/* .modal {
   width: 408px;
   min-height: 584px;
   flex-shrink: 0;
@@ -860,6 +883,21 @@ label {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+} */
+.modal {
+  width: 392px;
+  min-height: 584px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 50%;
+  top: 96px;
+  transform: translateX(-50%);
   border-radius: 4px;
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
