@@ -1194,7 +1194,7 @@ label {
 .addr-lnk {
 }
 .js-menu-container .social-list {
-  gap: calc((100%-260px) / 3);
+  gap: calc((100% - 260px) / 3);
   justify-content: flex-start;
 }
 .menu-nav-lnk.active {
