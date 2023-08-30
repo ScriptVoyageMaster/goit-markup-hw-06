@@ -897,7 +897,8 @@ label {
   padding: 72px 24px 24px 24px;
 } */
 .modal {
-  width: 392px;
+  max-width: 392px;
+  width: 100%;
   min-height: 584px;
   flex-shrink: 0;
   position: absolute;
