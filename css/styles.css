@@ -42,7 +42,7 @@ label {
   margin-left: auto;
   margin-right: auto; */
 
-  width: 428px;
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -492,6 +492,7 @@ label {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 /* .customers-item {
   display: flex;
@@ -541,6 +542,7 @@ label {
   background: var(--navyblue);
   padding-top: 97px;
   padding-bottom: 96px;
+  width: 100%;
 }
 /* .footer .container {
   display: flex;
@@ -644,6 +646,7 @@ label {
   background-color: #31d0aa;
 }
 .container-subscribe {
+  width: 100%;
 }
 /* .subscribe-text {
   color: var(--white);
@@ -687,9 +690,12 @@ label {
   letter-spacing: 0.04em;
   color: #fff;
 } */
+.subscribe-form-desck {
+  width: 100%;
+}
 .subscribe-input {
   padding: 8px 8px 8px 16px;
-  width: 398px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -1098,7 +1104,8 @@ label {
 
 .js-menu-container {
   display: none;
-  width: 428px;
+  width: 100%;
+  max-width: 428px;
   min-height: 796px;
   flex-shrink: 0;
   position: absolute;
@@ -1186,7 +1193,7 @@ label {
 .addr-lnk {
 }
 .js-menu-container .social-list {
-  gap: 56px;
+  gap: calc((100%-260px) / 3);
   justify-content: flex-start;
 }
 .menu-nav-lnk.active {
