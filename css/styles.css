@@ -284,7 +284,7 @@ label {
 @media (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/p);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peo);
     padding: 112px 0;
     margin: 0 auto;
     background-repeat: no-repeat;
