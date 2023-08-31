@@ -92,7 +92,7 @@ label {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 16px;
+  /* padding: 0 16px; */
 }
 .logo-lnk {
   color: var(--iris);
@@ -284,13 +284,14 @@ label {
 @media (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peo);
-    padding: 112px 0;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* object-fit: contain; */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet.jpg);
+   }
+   .hero-ttl {
+    font-size: 56px;
+    margin: 0 120px 36px;
+    font-weight: 700;
+    line-height: 1.07; /* 111.111% */
+    text-transform: none;
   }
 }
 /*==========================
@@ -373,6 +374,24 @@ label {
 .how-icon {
   display: none;
 }
+@media (min-width: 768px) {
+  .how {
+    padding-bottom: 48px;
+  }
+  .how-list {
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .how-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 48px;
+  } 
+.how-item-ttl{
+  text-align: left;
+}
+}
+
 /*==========================
 /    WHAT
 /===========================*/
@@ -507,6 +526,24 @@ label {
 .team .social-link:focus {
   background-color: #404bbf;
 }
+@media (min-width: 768px) {
+  .team {
+    padding-bottom: 56px;
+  }
+  .team-list {
+    /* background-color: var(--white);*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 83px;
+  }
+  .team-member {
+     margin: 0 0 40px;
+     /* justify-content: flex-end; */
+    /* transform: translateX(50%); */
+  }
+}
 /*===================================================================================================
 /    CUSTOMERS
 /===========================
@@ -575,6 +612,18 @@ label {
 .customers .icon:focus {
   fill: currentColor;
 }
+@media (min-width: 768px) {
+  .customers-list{
+    gap: 24px;
+   
+  }
+  .customers-item{
+    margin-bottom: 48px;
+  }
+  .customers{
+    padding-bottom: 48px;
+  }
+  }
 /*==================================================================================================
 /    FOOTER
 /===========================
@@ -804,6 +853,37 @@ label {
   fill: var(--white);
   margin-left: 16px;
 }
+@media (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: baseline;
+    padding-left: 92px;
+  }
+  .container-logo{
+    margin-bottom: 48px;
+  }
+  .container-social{
+    margin: 0;
+  }
+  .subscribe-text{
+    text-align: left;
+  }
+  .subscribe-form-desck{
+    max-width: 264px;
+    gap: 24px;
+  }
+  .subscribe-form{
+    flex-direction: row;
+  }
+  .subscribe-input{
+    width: 264px;
+  }
+  }
+
+
+
 /*=======================================*/
 .portfolio {
   padding-top: 96px;
@@ -994,6 +1074,13 @@ label {
   visibility: hidden;
   pointer-events: none;
 }
+@media (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+  }
+}
+
+
 /*=====================================
       FORM
 ======================================*/
