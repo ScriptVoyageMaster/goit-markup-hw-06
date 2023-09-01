@@ -1230,6 +1230,14 @@ label {
     max-width: 408px;
   }
 }
+@media (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+    left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  }
+}
 
 
 /*=====================================
